@@ -93,6 +93,16 @@ Please look into [Flows](docs/readme/flows.md) for a detailed sequence flow desc
   and [ciphershell-kotlin](https://github.com/radumarias/ciphershell-kotlin)
 - **Mobile apps** for **Android** and **iOS** are being worked
   on [ciphershell-kotlin](https://github.com/radumarias/ciphershell-kotlin)
+### Windows Fix for Issue #105
+
+If you get `Access is denied (code 5)` on Windows:
+
+1. Run terminal as Administrator
+2. Add rencfs folder to Windows Defender exclusion
+3. Use path like `C:\Users\%USERNAME%\rencfs_test` with full permission
+4. Ensure mount folder is empty
+
+Fixes #105
 
 # Considerations
 
